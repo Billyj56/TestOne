@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz One Piece</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Vidéo en arrière-plan -->
+    <div class="video-container">
+        <video autoplay loop muted class="background-video">
+            <source src="path/to/your/video.mp4" type="video/mp4"> <!-- Remplace par le bon chemin vers ta vidéo -->
+            Votre navigateur ne prend pas en charge la vidéo.
+        </video>
+    </div>
+
+    <div class="quiz-container" id="quiz">
+        <h2 id="question">Question s'affiche ici</h2>
+        <div class="options">
+            <button class="option" onclick="choisirReponse(0)">Option 1</button>
+            <button class="option" onclick="choisirReponse(1)">Option 2</button>
+            <button class="option" onclick="choisirReponse(2)">Option 3</button>
+            <button class="option" onclick="choisirReponse(3)">Option 4</button>
+        </div>
+        <button id="next-btn" onclick="questionSuivante()" style="display: none;">Question Suivante</button>
+        <p id="feedback"></p>
+        <p id="score">Score : 0</p>
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-firestore.js"></script>
+
+    <!-- Configuration Firebase -->
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyD7HCNkdtc-eQh511F4g-C-FWQdlRk_fSk",
+            authDomain: "apppiece.firebaseapp.com",
+            projectId: "apppiece",
+            storageBucket: "apppiece.appspot.com",
+            messagingSenderId: "493440696653",
+            appId: "1:493440696653:web:a46e3d6e205216ff4f3704",
+            measurementId: "G-1DEEBTH3TX"
+        };
+
+        // Initialiser Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+
+    <!-- Ton script principal -->
+    <script src="script.js"></script>
+</body>
+</html>

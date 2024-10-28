@@ -1,0 +1,90 @@
+/* Styles généraux pour le corps */
+body {
+    background-image: url('images/Onepiece.jpg'); /* Chemin vers l'image de fond */
+    background-size: cover; /* Pour couvrir tout l'écran */
+    background-position: center; /* Centrer l'image */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+    height: 100vh; /* Prendre toute la hauteur de la fenêtre */
+    margin: 0; /* Supprimer les marges par défaut */
+    display: flex; /* Utiliser Flexbox pour centrer le contenu */
+    align-items: center; /* Centrer verticalement */
+    justify-content: center; /* Centrer horizontalement */
+}
+
+/* Styles pour le conteneur du quiz */
+#quiz {
+    position: relative; /* Positionner le quiz par rapport à l'image de fond */
+    padding: 20px; /* Espace autour du contenu */
+    background-color: rgba(255, 255, 255, 0.8); /* Fond légèrement transparent pour le quiz */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Ombre autour du quiz */
+    text-align: center; /* Centrer le texte */
+}
+
+/* Styles pour les boutons d'option */
+.option {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #28a745; /* Couleur verte par défaut */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Ajout d'une transition */
+    cursor: pointer; /* Changer le curseur au survol */
+}
+
+/* Styles pour l'effet au survol des boutons */
+.option:hover {
+    opacity: 0.8; /* Légère transparence au survol */
+}
+
+/* Styles pour le feedback */
+#feedback {
+    margin-top: 15px; /* Espace au-dessus du feedback */
+    font-size: 20px; /* Taille de la police pour le feedback */
+    font-weight: bold; /* Mettre le texte en gras */
+    color: #333; /* Couleur du texte du feedback */
+}
+
+/* Styles pour le bouton suivant */
+#next-btn {
+    display: none; /* Masquer par défaut */
+    margin-top: 20px; /* Espace au-dessus du bouton suivant */
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff; /* Couleur du bouton suivant */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Changer le curseur au survol */
+}
+
+#next-btn:hover {
+    background-color: #0056b3; /* Couleur au survol du bouton suivant */
+}
+
+/* Styles pour le score */
+#score {
+    margin-top: 10px; /* Espace au-dessus du score */
+    font-size: 20px; /* Taille de la police pour le score */
+    font-weight: bold; /* Mettre le texte en gras */
+    color: #333; /* Couleur du texte du score */
+}
+
+.option {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #28a745; /* Couleur verte par défaut */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Ajout d'une transition */
+}
+
+.option:hover {
+    opacity: 0.8; /* Légère transparence au survol */
+}
