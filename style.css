@@ -73,18 +73,18 @@ body {
     color: #333; /* Couleur du texte du score */
 }
 
-.option {
-    display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #28a745; /* Couleur verte par défaut */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s; /* Ajout d'une transition */
+/* Responsive Styles */
+@media (max-width: 600px) {
+    body {
+        font-size: 0.9rem; /* Réduit la taille de police pour les petits écrans */
+    }
+    .question {
+        font-size: 1.2rem; /* Agrandit le texte des questions pour la lisibilité */
+    }
 }
 
-.option:hover {
-    opacity: 0.8; /* Légère transparence au survol */
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        font-size: 1.1rem; /* Taille de police intermédiaire */
+    }
 }
