@@ -19,12 +19,20 @@ body {
     border-radius: 10px; /* Coins arrondis */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Ombre autour du quiz */
     text-align: center; /* Centrer le texte */
+    width: 90%; /* Limiter la largeur du conteneur */
+    max-width: 600px; /* Largeur maximale pour le conteneur */
+}
+
+/* Styles pour les questions */
+.question {
+    font-size: 1.5rem; /* Taille de la police des questions */
+    margin: 20px 0; /* Marge au-dessus et au-dessous des questions */
 }
 
 /* Styles pour les boutons d'option */
 .option {
     display: block;
-    margin: 10px auto;
+    margin: 10px auto; /* Centre les boutons */
     padding: 10px 20px;
     font-size: 18px;
     background-color: #28a745; /* Couleur verte par défaut */
